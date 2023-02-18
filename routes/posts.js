@@ -13,8 +13,9 @@ router.get('/', async (req, res) => {
 
 router.post('/', async (req, res) => {
     const post = new Post({
-        title: req.body.title,
-        description: req.body.description
+        currency: req.body.currency,
+        buy: req.body.buy,
+        sell: req.body.sell
     });
     try{
         const savedPost = await post.save()
@@ -44,7 +45,7 @@ router.delete('/:postId', async (req, res) => {
 
 router.patch('/:postId', async (req, res) => {
     try{
-        const updatePost = await Post.updateOne({_id: req.params.postId}, { $set: {title: req.body.title}});
+        const updatePost = await Post.updateOne({_id: req.params.postId}, { $set: {currency: req.body.currency}});
         res.json(updatePost)
     }catch(err){
         res.json({message: err})
