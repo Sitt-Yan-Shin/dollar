@@ -10,8 +10,10 @@ app.use(cors());
 app.use(bodyParser.json());
 
 const postsRoute = require('./routes/posts');
+const timeRoute = require('./routes/updated');
 
 app.use('/posts', postsRoute);
+app.use('/time', timeRoute);
 
 //Routes
 app.get('/', (req, res) => {

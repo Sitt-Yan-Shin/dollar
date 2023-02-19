@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
 });
 
 router.post('/', async (req, res) => {
-    const post = new Post({
+    /* const post = new Post({
         currency: req.body.currency,
         buy: req.body.buy,
         sell: req.body.sell
@@ -22,8 +22,22 @@ router.post('/', async (req, res) => {
         res.json(savedPost);
     }catch(err){
         res.json({message: err})
-    }
+    } */
+    Post.insertMany(req.body).then((post) => {
+        res.send(post);
+    }).catch((err) => {
+        res.send(err)
+    })
 });
+
+router.delete('/', async (req, res) => {
+    try{
+        const deleteAll = await Post.deleteMany({});
+        res.json(deleteAll);
+    }catch(err){
+        res.json({message: err})
+    }
+})
 
 router.get('/:postId', async (req, res) => {
     try{
@@ -50,6 +64,7 @@ router.patch('/:postId', async (req, res) => {
     }catch(err){
         res.json({message: err})
     }
-})
+});
+
 
 module.exports = router;
