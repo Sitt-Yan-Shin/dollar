@@ -11,9 +11,15 @@ app.use(bodyParser.json());
 
 const postsRoute = require('./routes/posts');
 const timeRoute = require('./routes/updated');
+const fuelRoute = require('./routes/fuels');
+const goldRoute = require('./routes/gold');
+const newsRoute = require('./routes/news');
 
 app.use('/posts', postsRoute);
 app.use('/time', timeRoute);
+app.use('/fuels', fuelRoute);
+app.use('/gold', goldRoute);
+app.use('/news', newsRoute);
 
 //Routes
 app.get('/', (req, res) => {

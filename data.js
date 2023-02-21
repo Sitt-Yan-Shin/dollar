@@ -16,14 +16,14 @@
         "sell": "2155 MMK"
     },
     {
-        "currency": "MYR",
-        "buy": "650 MMK",
-        "sell": "665 MMK",
-    },
-    {
         "currency": "THB",
         "buy": "84 MMK",
         "sell": "85 MMK"
+    },
+    {
+        "currency": "MYR",
+        "buy": "650 MMK",
+        "sell": "665 MMK"
     },
     {
         "currency": "CNY",
