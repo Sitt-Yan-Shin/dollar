@@ -1,38 +1,37 @@
-
 [
     {
         "currency": "USD",
-        "buy": "2855 MMK",
-        "sell": "2865 MMK"
+        "buy": "2855",
+        "sell": "2865"
     },
     {
         "currency": "EUR",
-        "buy": "3020 MMK",
-        "sell": "3050 MMK"
+        "buy": "3020",
+        "sell": "3050"
     },
     {
         "currency": "SGD",
-        "buy": "2130 MMK",
-        "sell": "2155 MMK"
+        "buy": "2130",
+        "sell": "2155"
     },
     {
         "currency": "THB",
-        "buy": "84 MMK",
-        "sell": "85 MMK"
+        "buy": "84",
+        "sell": "85"
     },
     {
         "currency": "MYR",
-        "buy": "650 MMK",
-        "sell": "665 MMK"
+        "buy": "650",
+        "sell": "665"
     },
     {
         "currency": "CNY",
-        "buy": "412 MMK",
-        "sell": "418 MMK"
+        "buy": "412",
+        "sell": "418"
     },
     {
         "currency": "JPY",
-        "buy": "21 MMK",
-        "sell": "22 MMK"
+        "buy": "21",
+        "sell": "22"
     }
 ]

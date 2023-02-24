@@ -13,7 +13,7 @@ const FuelSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    disel: {
+    Diesel: {
         type: String,
         required: true
     }

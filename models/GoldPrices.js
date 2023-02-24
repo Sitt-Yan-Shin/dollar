@@ -1,7 +1,11 @@
 const mongoose = require('mongoose');
 
 const GoldSchema = mongoose.Schema({
-    Gold16: {
+    Gold16Buy: {
+        type: String,
+        required: false
+    },
+    Gold16Sell: {
         type: String,
         required: false
     },
