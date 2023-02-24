@@ -11,16 +11,32 @@ router.get('/', async (req, res) => {
     }
 });
 
-router.post('/', async (req, res) => {
-    const time = new Times({
-        updated: req.body.updated
-    });
+router.delete('/', async (req, res) => {
     try{
-        const savedTime = await time.save()
-        res.json(savedTime);
+        const deleteAll = await Times.deleteMany({});
+        res.json(deleteAll);
     }catch(err){
         res.json({message: err})
     }
+});
+
+router.post('/', async (req, res) => {
+    /* const post = new Post({
+        currency: req.body.currency,
+        buy: req.body.buy,
+        sell: req.body.sell
+    });
+    try{
+        const savedPost = await post.save()
+        res.json(savedPost);
+    }catch(err){
+        res.json({message: err})
+    } */
+    Times.insertMany(req.body).then((time) => {
+        res.send(time);
+    }).catch((err) => {
+        res.send(err)
+    })
 });
 
 router.patch('/:timeId', async (req, res) => {
