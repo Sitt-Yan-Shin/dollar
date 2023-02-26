@@ -16,6 +16,10 @@ const FuelSchema = mongoose.Schema({
     Diesel: {
         type: String,
         required: true
+    },
+    date: {
+        type: Date,
+        default: Date.now
     }
 });
 

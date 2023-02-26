@@ -6,32 +6,37 @@
     },
     {
         "currency": "EUR",
-        "buy": "3035",
+        "buy": "3030",
         "sell": "3060"
     },
     {
         "currency": "SGD",
-        "buy": "2145",
-        "sell": "2165"
+        "buy": "2155",
+        "sell": "2170"
     },
     {
         "currency": "THB",
-        "buy": "83.70",
-        "sell": "84.70"
+        "buy": "83.00",
+        "sell": "84.50"
     },
     {
         "currency": "MYR",
-        "buy": "650",
+        "buy": "645",
         "sell": "665"
     },
     {
         "currency": "CNY",
-        "buy": "412",
-        "sell": "419"
+        "buy": "415",
+        "sell": "421"
     },
     {
         "currency": "JPY",
-        "buy": "21.40",
-        "sell": "22.40"
+        "buy": "21.50",
+        "sell": "22.50"
+    },
+    {
+        "currency": "KRW",
+        "buy": "2.00",
+        "sell": "2.50"
     }
 ]

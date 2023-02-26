@@ -1,5 +1,5 @@
 [
     {
-        "updated" : "2:25 AM / 2.25.2023"
+        "updated" : "( *Gold Prices* 4:52 PM / 2.26.2023 )"
     }
 ]

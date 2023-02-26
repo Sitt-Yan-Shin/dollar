@@ -1,8 +1,8 @@
 [
     {
-        "nineTwo" : "2075",
-        "nineFive" : "2145",
-        "preDisel" : "2205",
-        "Diesel" : "2125"
+        "nineTwo" : "2120",
+        "nineFive" : "2195",
+        "preDisel" : "2250",
+        "Diesel" : "2170"
     }
 ]

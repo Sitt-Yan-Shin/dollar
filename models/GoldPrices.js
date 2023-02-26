@@ -9,14 +9,10 @@ const GoldSchema = mongoose.Schema({
         type: String,
         required: false
     },
-    YGN: {
-        type: String,
-        required: false
-    },
-    MDY: {
-        type: String,
-        required: false
-    },
+    date: {
+        type: Date,
+        default: Date.now
+    }
 });
 
 module.exports = mongoose.model('Gold', GoldSchema);
