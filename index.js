@@ -9,11 +9,11 @@ require('dotenv/config');
 app.use(cors());
 app.use(bodyParser.json());
 
+const newsRoute = require('./routes/news');
 const postsRoute = require('./routes/posts');
 const timeRoute = require('./routes/updated');
 const fuelRoute = require('./routes/fuels');
 const goldRoute = require('./routes/gold');
-const newsRoute = require('./routes/news');
 
 app.use('/posts', postsRoute);
 app.use('/time', timeRoute);
